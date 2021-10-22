@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    
+    <title>Formulario</title>
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <header>
+          <h1 id="title" class="text-center">SIGN IN</h1>
+          <p id="description">
+            welcome to the form
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="from-group">
+            <label id="name-label" for="name">Name:</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="from-group">
+            <label id="email-label" for="email">Email:</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="from-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(Optional):    </span></label
+            >
+            <input
+              id="number"
+              type="number"
+              name="age"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <h3>Which color do you prefer?</h3>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option id="blue"  value="blue">Blue</option>
+              <option id="green" value="green">Green</option>
+              <option id="grey"  value="grey">Grey</option>
+              <option id="yellow" value="yellow">Yellow</option>
+              <option id="black" value="black">Black</option>
+              <option  id="violet" value="violet">Violet</option>
+            </select>
+          </div>
+          <div id="radio">
+          <div>
+            <h3>Which place do you prefer?</h3>
+            <input type="radio" id="beach" name="drone" value="huey" checked />
+            <label >Beach</label>
+          </div>
+
+          <div>
+            <input type="radio" id="rivers" name="drone" value="dewey" />
+            <label >Rivers</label>
+          </div>
+
+          <div>
+            <input type="radio" id="desert" name="drone" value="louie" />
+            <label >Desert</label>
+          </div>
+        
+          <div>
+            <input type="radio" id="cave" name="drone" value="louie" />
+            <label >Cenote</label>
+          </div>
+          <div>
+            <input type="radio" id="Jungle" name="drone" value="louie" />
+            <label>Jungle</label>
+          </div>
+        </div>
+          <div>
+            
+         
+          <textarea name="" id="" cols="30" rows="5" placeholder="Enter your comment"></textarea>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button" onclick="saveData()">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </center>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
