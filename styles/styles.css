@@ -84,3 +84,13 @@ button:hover{
     background-color: rgb(248, 37, 0);
     color: black;
 }
+select{
+    margin-bottom: 7%;
+}
+hr{
+    width: 80%;
+}
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 0, 0);
+}
